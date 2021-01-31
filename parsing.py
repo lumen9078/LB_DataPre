@@ -2,7 +2,7 @@ import json
 
 def SQLParsing(file):
     sql=open(file, 'r', encoding='UTF-8')
-    par=open("./parsing.txt", 'w', encoding='UTF-8')
+    par=open("../../VisualCodeProject/Parsing/parsing.txt", 'w', encoding='UTF-8')
     line=str
     
     for s in sql:
@@ -25,5 +25,5 @@ def SQLParsing(file):
     sql.close()
     par.close()
 
-file="./TB_TRACKING2_DATA_20200222.sql"
+file= "../../VisualCodeProject/Parsing/TB_TRACKING2_DATA_20200222.sql"
 SQLParsing(file)
